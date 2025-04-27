@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drill Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Nav-Section-->
+
+    <nav>
+        <div class="logo">Scene Production</div>
+        <div>
+            <a href="#trap">Drill</a>
+        </div>
+    </nav>
+
+    <!--Slider-Section-->
+
+    <div class="slider">
+        <div class="slides" id="slideContainer">
+            <img src="images\offer.webp" alt="Slide 4">
+            <img src="images\bg-d.webp" alt="Slide 1">
+            <img src="images\offer.webp" alt="Slide 2">
+            <img src="images/bg-d2.webp" alt="Slide 3">
+            <img src="images\offer.webp" alt="Slide 4">
+            <img src="images\bg-d.webp" alt="Slide 1">
+        </div>
+        <button class="btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="btn next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <br>
+    <br>
+
+    <!--Trap-Beats-Section-->
+
+    <h2 class="section__header" id="trap">Choose your favourite beat</h2>
+    <p class="section__description">
+        Dive in, discover, and let the rhythms guide you to your musical
+        paradise.
+    </p>
+
+    <section class="beats" id="beats">
+        <div class="beat">
+            <h3>DRILL DEMO</h3>
+            <br>
+            <div class="custom-player" data-src="Beats\DRILL\DRILL DEMO.mp3">
+                <div class="controls">
+                    <button class="play-btn">Play</button>
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="time"><span class="current">0:00</span><span class="duration">0:00</span></div>
+            </div>
+        </div>
+        <div class="beat">
+            <h3>ELNEHAYA DEMO</h3>
+            <br>
+            <div class="custom-player" data-src="Beats\DRILL\ELNEHAYA DEMO.mp3">
+                <div class="controls">
+                    <button class="play-btn">Play</button>
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="time"><span class="current">0:00</span><span class="duration">0:00</span></div>
+            </div>
+        </div>
+        <div class="beat">
+            <h3>GABAL DEMO</h3>
+            <br>
+            <div class="custom-player" data-src="Beats\DRILL\GABAL DEMO.mp3">
+                <div class="controls">
+                    <button class="play-btn">Play</button>
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="time"><span class="current">0:00</span><span class="duration">0:00</span></div>
+            </div>
+        </div>
+        <div class="beat">
+            <h3>SADA SOUT DEMO</h3>
+            <br>
+            <div class="custom-player" data-src="Beats\DRILL\SADA SOUT DEMO.mp3">
+                <div class="controls">
+                    <button class="play-btn">Play</button>
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="time"><span class="current">0:00</span><span class="duration">0:00</span></div>
+            </div>
+        </div>
+        <div class="beat">
+            <h3>SHARARA DEMO</h3>
+            <br>
+            <div class="custom-player" data-src="Beats\DRILL\SHARARA DEMO.mp3">
+                <div class="controls">
+                    <button class="play-btn">Play</button>
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="time"><span class="current">0:00</span><span class="duration">0:00</span></div>
+            </div>
+        </div>
+        <div class="beat">
+            <h3>ZLZAL DEMO</h3>
+            <br>
+            <div class="custom-player" data-src="Beats\DRILL\ZLZAL DEMO.mp3">
+                <div class="controls">
+                    <button class="play-btn">Play</button>
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="time"><span class="current">0:00</span><span class="duration">0:00</span></div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+
+    <!--Purchase-Section-->
+
+    <h2 class="section__header">Contact us for purchase</h2>
+    <p class="section__description">
+        send us your info: name, number, the beats you want, email. <br>
+        and we will send to you the beats you want.
+    </p>
+
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/mjkyzagg" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="text" name="phone" placeholder="Phone number" required />
+            <input type="text" name="beats" placeholder="The beats you want" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <button type="submit">Send</button>
+        </form>
+
+    </section>
+
+    <br>
+
+    <!--Social-Section-->
+
+    <section class="socials">
+        <a href="https://wa.me/201124249802" target="_blank">
+          <img src="icons\whatsapp_5968841.webp" alt="whatsapp">
+        </a>
+        <a href="https://youtube.com/@scene_production10?si=0XU801pR2ZMeVXal" target="_blank">
+          <img src="icons/youtube_3938026.webp" alt="YouTube">
+        </a>
+        <a href="https://www.tiktok.com/@scene.production5?is_from_webapp=1&sender_device=pc" target="_blank">
+          <img src="icons/tiktok_2504942.webp" alt="TikTok">
+        </a>
+        <a href="https://www.instagram.com/scene.prouduction5?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank">
+          <img src="icons/instagram_2111463.webp" alt="Instagram">
+        </a>
+      </section>
+
+    <footer>
+        © 2025 Scene Production • All rights reserved
+    </footer>
+
+</body>
+
+</html>
